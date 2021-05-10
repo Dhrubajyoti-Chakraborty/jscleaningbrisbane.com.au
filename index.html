@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap - 4 Max CDN  -->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+<style>
+
+.navbar-brand{
+    padding-left: 3.5em;
+}
+.navbar{
+    height: 7.6em;
+    /* background: whitesmoke !important; */
+    padding: .5rem 0rem !important;
+}
+
+/* .collapse{
+    padding-right: 6em;
+} */
+.right-top{
+    margin-top: -24px;
+    background: #132b44;
+    width: 664px;
+    height: 62px;
+    padding-left: 77px;
+}
+.right-top img{
+    width: 26px;
+    height: 26px;
+    margin-right: 23px;
+    /* background-color: blue !important; */
+    margin-top: 17px;
+}
+.right-top h4{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-right: 4px;
+    margin-left: -12px;
+    /* color: blue !important; */
+
+}
+.phone h4{
+    padding-right: 44px;
+}
+/* .phone{
+    margin-right: 73px;
+} */
+.navbar-nav a.nav-link {
+    margin-right: 18px;
+    padding-top: 19px;
+    color: black !important;
+}
+.last-child a {
+    margin-right: 110px !important;
+}
+
+
+
+/* banner area */
+.banner{
+    background-image: url('banner.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.trasparent{
+    height: 572px;
+    width: 397px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-left: 52px;
+}   
+.trasparent h5{
+    margin-top: 67px;
+    color: #fff;
+    margin-bottom: 46px;
+    font-size: 27px;
+}
+
+.form-group input{
+    width: 80%;
+    height: 60px;
+    padding: 0px 25px;
+    margin: 0px 0px 20px;
+    border: #fff dashed 1px;
+    background: none;
+    color: #fff;
+    border-radius: 70px;
+    outline: none !important;
+    margin-bottom: 10px;
+    
+}
+input::placeholder{
+    font-weight: bold;
+    color: #fff;
+}
+button.btn.btn-success{
+    width: 80%;
+    height: 60px;
+    padding: 0px 25px;
+    margin: 0px 0px 20px;
+    /* border: #fff dashed 1px; */
+    /* background: none; */
+    color: #fff;
+    border-radius: 70px;
+    outline: none !important;
+    margin-top: 18px;
+}
+b, strong {
+    font-size: xx-large;
+}
+
+
+/* banner area */
+
+
+.banner_text {
+    margin-left: 8em;
+    margin-top: 6em;
+}
+
+.banner_text h2 {
+    font-size: 47px;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+    margin-left: -77px;
+
+}
+.banner_text strong {
+    color: #17d272;
+    font-size: 47px;
+
+}
+.get_area {
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+}
+
+.banner_text p {
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    border: #fff dashed 1px;
+    padding: 10px;
+    width: 200px;
+    text-transform: uppercase;
+    margin-top: 32px;
+    padding-left: 25px;
+}
+.banner_text h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: left;
+    margin-top: 27px;
+}
+.banner_text ul li {
+    text-align: left;
+    color: #fff;
+    list-style: circle;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: -16px;
+    margin-right: 80px;
+}
+
+/* section-1  */
+
+.section-1 img {
+    width: 503px;
+    height: 467px;
+
+}
+section.section-1 {
+    margin-left: 39px;
+    padding: 44px 0;
+}
+.section_1_text h1 {
+    color: #05a552;
+    font-size: 3.7em;
+    font-weight: 700;
+}
+.section_1_text p {
+    letter-spacing: .8px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 28px;
+    max-width: 571px;
+    margin-top: 24px;
+    margin-bottom: 22px;
+}
+.section-1_text li {
+    margin-left: -19px;
+}
+.col-md-7 {
+    width: 100%;
+    background: url('star-bg-compressor.jpg') no-repeat;
+    /* height: 100vh; */
+    padding: 76px 0;
+    font-size: 15px;
+}
+.section-1 ul li {
+    list-style: none;
+    background: url('check.png') no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: 16px;
+    padding-left: 25px;
+    margin-left: -39px;
+    /* margin-bottom: 5px; */
+}
+.section-1 a {
+    color: #04aa6d;
+    border: 1px solid #04aa6e;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 11px;
+}
+.section-1 a:hover {
+    text-decoration: none;
+}
+.section_1_text ul{
+    margin-bottom: 4rem;
+}
+
+
+
+/* section-2 */
+
+.outer_space{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.section-2{
+    background-color: #04aa6d;
+    width: 100%;
+    height: 56em;
+}
+.section-2 h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 44px;
+    font-weight: 700;
+    padding-top: 88px;
+    margin-bottom: 80px;
+}
+.section-2 img {
+    height: 155px;
+    border: #fff dashed 2px;
+    border-radius: 100%;
+}
+
+section.section-2 p {
+    text-align: center;
+    width: 144px;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 25px;
+}
+.inner_space{
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+
+/* section-4 */
+.section-4{
+    padding: 40px 40px;
+}
+.card{
+background: url(section_4_bg.jpg) no-repeat left top;
+    background-size: 100%;
+    height: 78vh;
+    /* height: 300px;
+    width: 300px; */
+}
+.section-4 h1{
+    
+    color: #05a552;
+    font-size: 60px;
+    font-weight: 700;
+}
+.section-4 h1 strong{
+  color: #0b8af1;
+  font-size: 60px;
+    font-weight: 700;
+}
+section.section-4 h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 26px;
+    margin-left: 35px;
+    margin-top: 38px;
+}
+section.section-4 ul {
+    margin-top: 10px;
+}
+section.section-4 ul li {
+    color: #fff;
+    list-style: circle;
+    font-weight: 400;
+    margin-left: 17px;
+}
+.section-5{
+    background: url(section_5_bg.jpg) no-repeat;
+    height: 400px;
+    width: 100%;
+    /* background-color: #1076e7; */
+    box-shadow: 1px 1px 37px -2px rgb(0 0 0 / 30%);
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    background-attachment: fixed;
+    background-position: bottom;
+    position: relative;
+    z-index: 1;
+}
+.line{
+    border-top: 1px solid rgba(255,255,255,0.5)  !important;
+    border-color: rgba(255,255,255,0.5) ;
+    width: 700px;
+}
+.section-5.m-auto{
+    position: absolute !important;
+    background: rgba(0,0,0,0.7) !important;
+/* height : 100vh;
+width : 100%; */
+  /* opacity: 0.6; */
+}
+.section-5 h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+.button_transparent a{
+    /* display: block;
+    color: #fff;
+    padding: 10px 20px 10px 65px;
+    border: #fff solid 2px;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none !important;
+    position: relative;
+    border-radius: 40px; */
+}
+.get_quote{
+    /* content: '';
+    width: 50px;
+    height: 100%;
+    border-right: #fff solid 2px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background: url(../images/arrow-icon.png) no-repeat 15px 15px;
+    background-size: 22px; */
+}
+</style>
+
+</head>
+<body>
+
+
+<header>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+                    <a class="navbar-brand" href="#"><img src="logo.jpg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-flex align-items-end flex-column" id="navbarNav">
+                        <!-- <div class="mr-5"></div> -->
+                        <div class="right-top d-flex">
+                            <div class="phone d-flex">
+                                <img src="white_phone_icon.png" alt="">
+                                <h4>04 6628 8987</h4>
+                            </div>
+                            <div class="text d-flex">
+                                <img src="white-arrow-icon.png" alt="">
+                                <h4>Get a quote</h4>
+                            </div>
+                        </div>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Blogs</a>
+                        </li>
+                        <li class="nav-item last-child">
+                            <a class="nav-link " href="#">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<main>
+
+<section class="banner">
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" trasparent text-center">
+                <h5>Get a FREE Quote
+                </h5>
+                <div class="form-group">
+                    <div class="form-goup-items">
+                        <input type="text" placeholder="Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-goup-items">
+                        <input type="text" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-goup-items">
+                        <input type="text" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-goup-items">
+                        <button type="button" class="btn btn-success" placeholder="Phone"><b> Book Now </b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="banner_text text-center">
+                <h2 class="text-center">Grab the <strong>Free</strong> Cleaning <strong>Deal</strong></h2>
+                <div class="get_area">Get your 1<sup>st</sup> office cleaning free*</div>
+                <p> Get Check List </p>
+                <h3>What JS Cleaning Includes</h3>
+               <div class="list_items d-flex">
+
+                <ul>
+                    <li>Trained professional quality</li>
+                    <li>Competitive Pricing</li>
+                    <li>Fully insured</li>
+                    <li>Environment friendly equipment</li>
+                </ul>
+                <ul>
+                    <li>Police-checked cleaners</li>
+                    <li>Local service team</li>
+                    <li>Satisfaction guarantee</li>
+                    <li>Most trusted Clearing Services</li>
+                </ul>
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="section-1 d-flex">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-5 col-sm-12">
+                <img src="section_1.jpg" alt="">
+            </div>
+            <div class="col-md-7 col-sm-12 background_image">
+                <div class="section_1_text">
+                    <h1>Spotless Office Cleaning</h1>
+                    <p>Our professionalism and modernized services are what makes us stand out from our competitors. JS Cleaning has made your household cleaning services work effortlessly, quick and are consistent!</p>
+                    <p>Our highly accomplished cleaners execute their jobs with absolute compliance and quality enabled with exceedingly proficient cleaning team leaders.</p>
+                    <ul>
+                        <li>A highly experienced and talented staff</li>
+                        <li>Best cleaning equipment and tools</li>
+                        <li>Quick and valuable cleaning solutions</li>
+                        <li>Easy booking through the website</li>
+                        <li>Highly adapted cleaning services</li>
+                    </ul>
+                    <p>
+                        <a href="">More about reliable cleaning services in Brisbane</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</section>
+<div class="outer_space">
+    <section class="section-2">
+        <h2>Exclusive Services</h2>
+            <div class="container-fluid">
+                <div class="inner_space">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-12"><img src="service_1.png" alt=""><p>SPORTS AND RECREATIONAL CENTER CLEANING</p></div>
+                        <div class="col-lg-3 col-md-4 col-sm-12"><img src="service_2.png" alt=""><p>SUPER MARKET CLEANING</p></div>
+                        <div class="col-lg-3 col-md-4 col-sm-12"><img src="service_3.png" alt=""><p>INDUSTRIAL CLEANING</p></div>
+                        <div class="col-lg-3 col-md-4 col-sm-12"><img src="service_4.png" alt=""><p>SCHOOL CLEANING</p></div>
+                        <div class="col-lg-3 col-md-4 col-sm-12"><img src="service_5.png" alt=""><p>OFFICE CLEANING</p></div>
+                        <div class="col-lg-3 col-md-4 col-sm-12"><img src="service_6.png" alt=""><p>BANK CLEANING</p></div>
+                        <div class="col-lg-3 col-md-4 col-sm-12"><img src="service_7.png" alt=""><p>HOSPITALITY CLEANING</p></div>
+                        <div class="col-lg-3 col-md-4 col-sm-12"><img src="service_8.png" alt=""><p>BUILDERS CLEANING</p></div>
+                       
+                    </div>
+                </div>
+              
+            </div>
+    </section>
+</div>
+
+<section class="section-1 d-flex">
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-md-7 col-sm-12 background_image">
+                <div class="section_1_text">
+                    <h1>Quality Commercial Cleaning in Brisbane</h1>
+                    <p>Whatever style of cleaning service you require, our cleaners will make you feel happy when you open the door to a clean and completely fresh home.</p>
+                    <ul>
+                        <li>Extremely competent and reliable cleaning services
+                        </li>
+                        <li>100% customer cleaning contentment
+                        </li>
+                        <li>Timely cleaning service at affordable pricing
+                        </li>
+                        <li>Dedicated to delivering the finest cleaning solutions
+                        </li>
+                        <li>Cleaning professionals handpicked for your home
+                        </li>
+                    </ul>
+                    <p>JS Cleaning is one of the best commercial cleaning companies in Brisbane offering domestic and industrial cleaning services at cheap prices across the Brisbane region, city and north and south suburbs.  If you are looking for effective, affordable & reliable office cleaning services in Brisbane Call 046-628-8987 now. Get a free quote!</p>
+                    <p>
+                        <a href="">Check Cleaning Prices</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <img src="section_3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+   
+</section>
+
+
+<section class="section-4">
+       <h1  class="text-center"><strong>Our</strong> Services</h1>
+       <div class="container-fluid">
+           <div class="row">
+               <div class="col-md-4">
+
+               <div class="card " style="background-color: #084bad;">
+                   <h3>DOMESTIC</h3>
+                   <ul>
+                       <li>House Cleaning</li>
+                       <li>Window Cleaning</li>
+                       <li>Bond Cleaning</li>
+                       <li>Oven Cleaning</li>
+                       <li>Spring Cleaning</li>
+                       <li>Pre-Sale Cleaning</li>
+                       <li>Construction Cleaning</li>
+                       <li>Apartment Cleaning</li>
+                       <li>Fridge Cleaning</li>
+                   </ul>
+               </div>
+            </div>
+            <div class="col-md-4">
+
+               <div class="card" style="background-color: #077e45;">
+                <h3>COMMERCIAL</h3>
+                <ul>
+                    <li>House Cleaning</li>
+                    <li>Window Cleaning</li>
+                    <li>Bond Cleaning</li>
+                    <li>Oven Cleaning</li>
+                    <li>Spring Cleaning</li>
+                    <li>Pre-Sale Cleaning</li>
+                    <li>Construction Cleaning</li>
+                    <li>Apartment Cleaning</li>
+                    <li>Fridge Cleaning</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="background-color: #3c4243;">
+                <h3>ADDITIONAL</h3>
+                <ul>
+                    <li>House Cleaning</li>
+                    <li>Window Cleaning</li>
+                    <li>Bond Cleaning</li>
+                    <li>Oven Cleaning</li>
+                    <li>Spring Cleaning</li>
+                    <li>Pre-Sale Cleaning</li>
+                    <li>Construction Cleaning</li>
+                    <li>Apartment Cleaning</li>
+                    <li>Fridge Cleaning</li>
+                </ul>
+            </div>
+           </div>
+        </div>
+
+       </div>
+</section>
+
+<section class="section-5">
+   <div class="container-fluid">
+       <div class="row">
+           <div class="col-lg-8 col-md-8 col-sm-12 m-auto">
+               <h2>Experience thorough and hassle-free cleaning with exceptional results!</h2>
+               <p>We offer customised cleaning solutions to meet the specific needs of our customers across Brisbane & surrounding suburbs.</p>
+               <div class="line m-auto"></div>
+
+               <!-- <div class="button_transparent">
+                  <button> <a href="">+61 466 288 987</a></button>
+               </div>
+               <div class="get_quote">
+                  <button> <a href="">Get a Quote</a></button>
+
+               </div> -->
+
+            </div>
+       </div>
+   </div>
+</section>
+
+
+
+
+
+</main>
+
+
+<footer></footer>
+
+
+</body>
+</html>    
+
+
