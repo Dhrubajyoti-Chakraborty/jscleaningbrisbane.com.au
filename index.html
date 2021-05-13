@@ -23,7 +23,15 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Document</title>
 <style>
-
+    body{
+        overflow-x: hidden;
+    }
+.sticky-top {
+    position: -webkit-sticky !important;
+    position: sticky;
+    top: 0;
+    z-index: 1020 !important;
+}
 .navbar-brand{
     padding-left: 3.5em;
 }
@@ -199,6 +207,9 @@ section.section-1 {
     margin-left: 39px;
     padding: 44px 0;
 }
+.section_1_text.margin {
+    margin-top: -79px;
+}
 .section_1_text h1 {
     color: #05a552;
     font-size: 3.7em;
@@ -258,7 +269,7 @@ section.section-1 {
 .section-2{
     background-color: #04aa6d;
     width: 100%;
-    height: 56em;
+    height: 51em;
 }
 .section-2 h2 {
     text-align: center;
@@ -286,10 +297,41 @@ section.section-2 p {
     margin-right: 130px;
 }
 
+/* new sec 1 */
+.new_sec_1 h1{
+    margin-left: 22px;
+}
+.new_sec_1 img{
+    margin-left: -55px;
+}
+.new_sec_1 p {
+    letter-spacing: .7px;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 28px;
+    max-width: 571px;
+    margin-top: 24px;
+    margin-bottom: 22px;
+    margin-left: 28px;
+}
+.new_sec_1 ul {
+    margin-bottom: 2rem;
+    margin-left: 1.5em;
+}
+.new_sec_1 p.space {
+    margin-top: 4em;
+}
+.new_sec_1_img img {
+    width: 560px;
+    height: 548px;
+    margin-left: -114px;
+    margin-top: 6em;
+}
 
 /* section-4 */
 .section-4{
     padding: 40px 40px;
+    margin-top: -42px;
 }
 .card{
 background: url(section_4_bg.jpg) no-repeat left top;
@@ -303,12 +345,14 @@ background: url(section_4_bg.jpg) no-repeat left top;
     color: #05a552;
     font-size: 60px;
     font-weight: 700;
+    margin-bottom: 54px;
 }
 .section-4 h1 strong{
   color: #0b8af1;
   font-size: 60px;
     font-weight: 700;
 }
+
 section.section-4 h3 {
     color: #fff;
     font-weight: 700;
@@ -324,6 +368,7 @@ section.section-4 ul li {
     list-style: circle;
     font-weight: 400;
     margin-left: 17px;
+    line-height: 1.65rem;
 }
 .section-5{
     background: url(section_5_bg.jpg) no-repeat;
@@ -339,6 +384,10 @@ section.section-4 ul li {
     background-position: bottom;
     position: relative;
     z-index: 1;
+}
+.section-5 p{
+    width: 34em;
+    margin-left: 7em;
 }
 .line{
     border-top: 1px solid rgba(255,255,255,0.5)  !important;
@@ -377,6 +426,264 @@ width : 100%; */
     left: 0px;
     background: url(../images/arrow-icon.png) no-repeat 15px 15px;
     background-size: 22px; */
+}
+
+.section-6{
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+.text_col h3{
+    margin-top: 4.5rem;
+    font-weight: 600;
+}
+.carousel-item{
+    height: 20rem;
+}
+.section-6 h2{
+    
+    color: #05a552;
+    font-size: 3rem;
+    font-weight: 700;
+    /* margin-bottom: 54px; */
+}
+.section-6 h2 strong{
+  color: #0b8af1;
+  font-size: 3rem;
+    font-weight: 700;
+}
+.img_col img {
+    height: 28rem;
+    margin-top: 9rem;
+    margin-left: 10px;
+}
+blockquote {
+    margin: 0 0 1rem;
+    text-align: justify;
+    font-size: 17px;
+    font-weight: 400;
+}
+span.name_col {
+    color: #05a552;
+    font-weight: 700;
+}  
+
+
+/* section-7 */
+
+.section-7 {
+    background: #1076e7;
+    padding: 40px 0;
+    margin-top: 3rem;
+}
+.section-7 img{
+    border-style: dashed;
+    border-radius: 50%;
+    color: #fff;
+    padding: 15px;
+}
+.section-7 .row{
+    margin-left: 145px;
+}
+.statistics_1 {
+    margin-left: 7rem;
+}
+.statistics_1 h3 {
+    color: #fff;
+    margin-top: 14px;
+}
+
+.statistics_1 p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+}
+ /* responsive */
+ @media(min-width: 992px){
+        .mobilebanner{
+    display: none;
+}
+
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .mobilebanner{
+    display: none;
+}
+}
+@media(min-width: 575px) and (max-width: 767px){
+
+}
+/* @media(min-width: 480px) and (max-width: 574px){
+    span.navbar-toggler-icon {
+    padding-left: 62em;
+    margin-top: -4em;
+    }
+    .right-top {
+    margin-top: 3px;
+    background: #132b44;
+    width: 431px;
+    height: 62px;
+    padding-left: 14px;
+}
+.right-top h4 {
+    font-size: 18px;
+    margin-top: 18px;
+}
+.mobilebanner{
+    display: block;
+}
+.banner_text {
+    
+    background: rgba(0, 0, 0, 0.7);
+}
+.banner_text {
+    margin-top: 1em;
+}
+.banner_text h2 {
+    font-size: 24px;
+    margin-left: 0px;
+}
+.banner_text strong {
+    font-size: 24px;
+}
+.get_area {
+    font-size: 23px;
+    text-align: center;
+    }
+.banner_text h3 {
+    text-align: center;
+}
+.trasparent{
+    height: 572px;
+    width: 397px;
+    background: #007bff;
+    margin-left: 52px;
+} 
+.pcbanner{
+    display: none;
+}
+.main{
+    width: 704px;
+}
+.align-items-end {
+    align-items: center!important;
+}
+.right-top {
+  width: 707px;
+  padding-left: 0px;
+}
+.right-top h4 {
+    font-size: 26px;
+}
+.phone{
+    width: 435px;
+    background: #bbce33;
+}
+.right-top img {
+    margin-top: 21px;
+    margin-left: 32px;
+}
+.text{
+    background: #4c9ad0;
+    width: 272px;
+}
+.right-top img {
+    margin-top: 20px;
+    margin-left: 28px;
+}
+.mobilebanner.banner {
+    width: 409px;
+}
+} */
+@media(max-width: 479px){
+    .navbar-brand {
+    padding-left: 0px;
+}
+.navbar-brand a{
+    height: 2em;
+}
+    span.navbar-toggler-icon {
+    padding-left: 36em;
+    margin-top: -4em;
+    }
+    .right-top {
+    margin-top: 3px;
+    background: #132b44;
+    width: 431px;
+    height: 62px;
+    padding-left: 14px;
+}
+.right-top h4 {
+    font-size: 18px;
+    margin-top: 18px;
+}
+.mobilebanner{
+    display: block;
+    margin-top: 30px;
+}
+.banner_text {
+    
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 1em;
+    margin-left: 2em;
+}
+.banner_text h2 {
+    font-size: 24px;
+    margin-left: 0px;
+}
+.banner_text strong {
+    font-size: 24px;
+}
+.get_area {
+    font-size: 23px;
+    text-align: center;
+    }
+.banner_text h3 {
+    text-align: center;
+}
+.trasparent{
+    height: 572px;
+    width: 397px;
+    background: #007bff;
+    margin-left: 52px;
+} 
+.pcbanner{
+    display: none;
+}
+.main{
+    width: 704px;
+}
+.align-items-end {
+    align-items: center!important;
+}
+.right-top {
+  width: 411px;
+  padding-left: 0px;
+}
+.right-top h4 {
+    font-size: 16px;
+}
+.phone{
+    width: 435px;
+    background: #bbce33;
+}
+/* .right-top img {
+    margin-top: 18px;
+    margin-left: 24px;
+} */
+.text{
+    background: #4c9ad0;
+    width: 272px;
+}
+.right-top img {
+    margin-top: 20px;
+    margin-left: 16px;
+    width: 20px;
+    height: 20px;
+}
+/* .mobilebanner.banner {
+    width: 409px;
+} */
 }
 </style>
 
@@ -439,7 +746,7 @@ width : 100%; */
 
 
 <main>
-
+    <div class="pcbanner">
 <section class="banner">
     <div class="container-fluid">
         <div class="row">
@@ -494,6 +801,65 @@ width : 100%; */
 
 </section>
 
+</div>
+
+<div class="mobilebanner">
+    <section class="banner">
+        <div class="container-fluid">
+            <div class="row">
+              
+                <div class="banner_text text-center">
+                    <h2 class="text-center">Grab the <strong>Free</strong> Cleaning <strong>Deal</strong></h2>
+                    <div class="get_area">Get your 1<sup>st</sup> office cleaning free*</div>
+                    <p> Get Check List </p>
+                    <h3>What JS Cleaning Includes</h3>
+                   <div class="list_items d-flex">
+    
+                    <ul>
+                        <li>Trained professional quality</li>
+                        <li>Competitive Pricing</li>
+                        <li>Fully insured</li>
+                        <li>Environment friendly equipment</li>
+                    </ul>
+                    <!-- <ul>
+                        <li>Police-checked cleaners</li>
+                        <li>Local service team</li>
+                        <li>Satisfaction guarantee</li>
+                        <li>Most trusted Clearing Services</li>
+                    </ul> -->
+                   </div>
+    
+                </div>
+                <div class=" trasparent text-center">
+                    <h5>Get a FREE Quote
+                    </h5>
+                    <div class="form-group">
+                        <div class="form-goup-items">
+                            <input type="text" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-goup-items">
+                            <input type="text" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-goup-items">
+                            <input type="text" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-goup-items">
+                            <button type="button" class="btn btn-success" placeholder="Phone"><b> Book Now </b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+</div>
+
 <section class="section-1 d-flex">
     <div class="container-fluid">
 
@@ -502,7 +868,7 @@ width : 100%; */
                 <img src="section_1.jpg" alt="">
             </div>
             <div class="col-md-7 col-sm-12 background_image">
-                <div class="section_1_text">
+                <div class="section_1_text margin">
                     <h1>Spotless Office Cleaning</h1>
                     <p>Our professionalism and modernized services are what makes us stand out from our competitors. JS Cleaning has made your household cleaning services work effortlessly, quick and are consistent!</p>
                     <p>Our highly accomplished cleaners execute their jobs with absolute compliance and quality enabled with exceedingly proficient cleaning team leaders.</p>
@@ -551,7 +917,7 @@ width : 100%; */
         <div class="row">
 
             <div class="col-md-7 col-sm-12 background_image">
-                <div class="section_1_text">
+                <div class="section_1_text new_sec_1">
                     <h1>Quality Commercial Cleaning in Brisbane</h1>
                     <p>Whatever style of cleaning service you require, our cleaners will make you feel happy when you open the door to a clean and completely fresh home.</p>
                     <ul>
@@ -567,12 +933,12 @@ width : 100%; */
                         </li>
                     </ul>
                     <p>JS Cleaning is one of the best commercial cleaning companies in Brisbane offering domestic and industrial cleaning services at cheap prices across the Brisbane region, city and north and south suburbs.  If you are looking for effective, affordable & reliable office cleaning services in Brisbane Call 046-628-8987 now. Get a free quote!</p>
-                    <p>
+                    <p class="space">
                         <a href="">Check Cleaning Prices</a>
                     </p>
                 </div>
             </div>
-            <div class="col-md-5 col-sm-12">
+            <div class="col-md-5 col-sm-12 new_sec_1_img">
                 <img src="section_3.jpg" alt="">
             </div>
         </div>
@@ -584,6 +950,7 @@ width : 100%; */
 
 <section class="section-4">
        <h1  class="text-center"><strong>Our</strong> Services</h1>
+       <div class="space"></div>
        <div class="container-fluid">
            <div class="row">
                <div class="col-md-4">
@@ -608,15 +975,12 @@ width : 100%; */
                <div class="card" style="background-color: #077e45;">
                 <h3>COMMERCIAL</h3>
                 <ul>
-                    <li>House Cleaning</li>
-                    <li>Window Cleaning</li>
-                    <li>Bond Cleaning</li>
-                    <li>Oven Cleaning</li>
-                    <li>Spring Cleaning</li>
-                    <li>Pre-Sale Cleaning</li>
-                    <li>Construction Cleaning</li>
-                    <li>Apartment Cleaning</li>
-                    <li>Fridge Cleaning</li>
+                    <li>Office Cleaning</li>
+                    <li>Supermarket Cleaning</li>
+                    <li>Industrial Cleaning</li>
+                    <li>Event Cleaning</li>
+                    <li>Emergency Cleaning</li>
+                    <li>Builders Cleaning</li>
                 </ul>
             </div>
         </div>
@@ -624,15 +988,19 @@ width : 100%; */
             <div class="card" style="background-color: #3c4243;">
                 <h3>ADDITIONAL</h3>
                 <ul>
-                    <li>House Cleaning</li>
-                    <li>Window Cleaning</li>
-                    <li>Bond Cleaning</li>
-                    <li>Oven Cleaning</li>
-                    <li>Spring Cleaning</li>
-                    <li>Pre-Sale Cleaning</li>
-                    <li>Construction Cleaning</li>
-                    <li>Apartment Cleaning</li>
-                    <li>Fridge Cleaning</li>
+                    <li>Carpet Cleaning</li>
+                    <li>Mattress Cleaning</li>
+                    <li>Curtain Cleaning</li>
+                    <li>Roof Cleaning</li>
+                    <li>Floor Polishing</li>
+                    <li>Tile Cleaning</li>
+                    <li>Pressure Cleaning</li>
+                    <li>Pest Control</li>
+                    <li>Rubbish Removal</li>
+                    <li>Water Damage Restoration</li>
+                    <li>Decluttering</li>
+                    <li>Gardening</li>
+                    <li>Labour Hire</li>
                 </ul>
             </div>
            </div>
@@ -654,7 +1022,6 @@ width : 100%; */
                </div>
                <div class="get_quote">
                   <button> <a href="">Get a Quote</a></button>
-
                </div> -->
 
             </div>
@@ -662,6 +1029,115 @@ width : 100%; */
    </div>
 </section>
 
+
+<section class="section-6">
+    <div class="container-fluid">
+        <div class="row  x">
+            <div class="col-md-6 col-sm-12">
+                <div class="text_col">
+                    <h3>Testimonials</h3>
+                    <h2><strong> WHAT OUR</strong><br> CLIENTS ARE SAYING</h2>
+        
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div>
+                                <p>
+                                    <blockquote>
+                                        Great service, reasonable price, with very friendly and helpful staff. Received some helpful tips on certain areas of the unit for new tenants also. Would use them again thanks js bond cleaning
+                                    </blockquote>
+                                    <span class="name_col">
+                                        - Graeme stockton
+                                    </span><br>
+                                    <img src="star.png" alt="">
+                                </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div>
+                                <p>
+                                    <blockquote>
+                                        We used your team 3 weeks ago for our bond clean and very impressed. Everything was cleaned to a high standard and we got all of our bond back. The real estate agent even commented on the great job we did. Thank you!
+                                    </blockquote>
+                                    <span class="name_col">
+                                        - Ronald Craig
+                                    </span><br>
+                                    <img src="star.png" alt="">
+                                </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div>
+                                <p>
+                                    <blockquote>
+                                        Thanks for your hard and honest work for doing my bond cleaning. I am happy with the cleaning and will recommend to JS bond cleaning my friend and family for bond cleaning. thank  you once again.
+                                    </blockquote>
+                                    <span class="name_col">
+                                        - Tyler Maclare
+                                    </span> <br>
+                                    <img src="star.png" alt="">
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+        
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-12">
+                <div class="img_col">
+                    <img src="our_client_saying.jpg" alt="">
+                </div>
+            </div>
+         
+      
+
+        </div>
+    </div>
+
+
+</section>
+
+<section class="section-7 ">
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="statistics_1">
+            <img src="statistics-icon1.png" alt="">
+            <h3>1500+</h3>
+            <p>Happy Clients</p>
+            </div>
+            <div class="statistics_1">
+                <img src="statistics-icon2.png" alt="">
+                <h3>1500+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="statistics_1">
+                <img src="statistics-icon3.png" alt="">
+                <h3>1500+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="statistics_1">
+                <img src="statistics-icon4.png" alt="">
+                <h3>1500+</h3>
+                <p>Happy Clients</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
@@ -672,7 +1148,86 @@ width : 100%; */
 <footer></footer>
 
 
+
+>>>   WAP to swap values of two variables.
+            A = 10
+            B = 20 
+
+            //LOGIC          
+
+            CONSOLE.LOG(A) //20
+            CONSOLE.LOG(B) //10
+
+>>>   WAP to swap values of two variables without using third variable.
+            A = 10
+            B = 20 
+            //LOGIC 
+            CONSOLE.LOG(A) //20
+            CONSOLE.LOG(B) //10    
+
+>>>     Write a  program to find maximum between two numbers.
+
+>>>     Write a  program to find maximum between three numbers.
+
+>>>     Write a  program to check whether a number is negative, positive or zero.
+
+>>>     Write a  program to check whether a number is divisible by 5 and 11 or not.
+
+>>>     Write a  program to check whether a number is even or odd.
+
+>>>     Write a  program to check whether a year is leap year or not.
+	4 100 400
+
+
+
+>>>     Write a  program to input any alphabet and check whether it is vowel or consonant.		
+
+>>>     Write a  program to input week number and print week day.
+ day = 1
+
+ 1 => monday
+ 2 => tuesday
+ 3 => wednesday
+ 4 => thursday
+ 5 => friday
+ 6 => saturday
+ 7 => sunday
+
+>>>     Write a  program to input month number and print number of days in that month.
+
+>>>     Write a  program to count total number of notes in given amount.
+
+>>>     Write a  program to input angles of a triangle and check whether triangle is valid or not.
+
+>>>     Write a  program to input all sides of a triangle and check whether triangle is valid or not.
+
+>>>     Write a  program to check whether the triangle is equilateral, isosceles or scalene triangle.
+
+>>>     Write a  program to find all roots of a quadratic equation.
+
+>>>     Write a  program to calculate profit or loss.
+
+>>>     Write a  program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and 
+        Computer. Calculate percentage and grade according to following:
+			Percentage >= 90% : Grade A
+			Percentage >= 80% : Grade B
+			Percentage >= 70% : Grade C
+			Percentage >= 60% : Grade D
+			Percentage >= 40% : Grade E
+			Percentage < 40% : Grade F
+
+
+>>>     Write a  program to input basic salary of an employee and calculate its Gross salary according to following:
+			Basic Salary <= 10000 : HRA = 20%, DA = 80%
+			Basic Salary <= 20000 : HRA = 25%, DA = 90%
+			Basic Salary > 20000 : HRA = 30%, DA = 95%
+			
+>>>     Write a  program to input electricity unit charges and calculate total electricity bill 
+		according to the given condition:
+			For first 50 units Rs. 0.50/unit = meter1 50
+			For next 100 units Rs. 0.75/unit = meter2 150
+			For next 100 units Rs. 1.20/unit = meter 3 250
+			For unit above 250 Rs. 1.50/unit = meter 4 
+			An additional surcharge of 20% is added to the bill
 </body>
 </html>    
-
-
